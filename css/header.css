@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease-in;
+   
+}
+
+.header:hover{
+  background-color:#fff;
+}
+
+.header__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  1.5rem 0;
+}
+
+.header__lista{
+  display: flex;
+  align-items: center;
+
+}
+
+.header__lista li{
+line-height: 1.5;
+
+}
+
+.header__link{
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color:#000;
+  transition: color .1s ease-in;
+  font-family: "Arbutus Slab";
+}
+
+.header__link:hover{
+  color: var(--primary);
+}
+
+.header__center{
+  margin: 0 3.5rem;
+}
+
+.logo{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 500;
+}
