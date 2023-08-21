@@ -1,5 +1,8 @@
+@import url("header.css");
+@import url("home.css");
+@import url("cursos.css");
 :root{
---blue: #007bff;
+  --blue: #007bff;
 --indigo: #6610f2;
 --purple: #6f42c1;
 --pink: #e83e8c;
@@ -7,7 +10,7 @@
 --orange: #fd5f00;
 --yellow: #ffc107;
 --green: #71bc42;
---teal: #20c997;
+--teal: #20c997; 
 --cyan: #17a2b8;
 --white: #fff;
 --gray: #6c757d;
@@ -33,4 +36,5 @@ body{
   height: 100%;
   width: 100%;
   background-color:var(--white);
+  font-family:"Arbutus Slab", serif;
 }

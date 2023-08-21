@@ -1,0 +1,64 @@
+.cursos{
+  padding: auto 0;
+}
+
+.cursos__container{
+  height:calc(100vh - 5rem);
+  padding: 7rem 0;
+}
+
+.cursos__titulo{
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem 0;
+  font-weight: 500;
+  line-height: 1.5;  
+}
+
+.cursos__grid{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto ;
+  padding:0 4rem;
+  margin: 0 auto;
+}
+
+.cursos__card{
+  padding: 30px;
+  display: grid;
+  grid-template-areas: 
+  "icon titulo"
+  "empty p";
+  grid-template-columns:  auto 4fr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 0;
+  transition: .5s;
+}
+
+.cursos__card:hover{
+  background-color: #fff;
+  box-shadow: 2px 10px 2rem rgba(0, 0, 0, 0.3);  
+  transform: translateY(-2px);
+}
+
+.cursos__icon{
+  color: #fff;
+  margin-right: 40px;
+  display:flex;
+  align-self: center;
+  background-color: var(--primary);
+  padding:10px;
+  transform: scale(1.8);
+  grid-area: icon;
+  clip-path: circle(40% at center);
+}
+
+.cursos__card___titulo{
+  grid-area: titulo;
+  font-size: 1.2rem;
+}
+.cursos__card___p{
+  grid-area: p;
+  color:#666;
+}
