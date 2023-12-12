@@ -1,35 +1,51 @@
-.pic__container{
-  height: 100vh;
-  background-color: var(--light);
- 
-}
-
 .home{
   background-color:var(--light);
   height: 100vh;
   display: flex;
-  padding: 0 6.5rem;
+  background-image: url('../projectsImages/fundobranco.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .home__container{
+  margin-left: 6.5em;
 align-self: center;
 font-family: "Arbutus Slab", serif;
 }
 
+
 .home__titulo{
-  font-size: 2.7rem;
-  margin-bottom:.5rem;
+  font-size: 3em;
+  margin-bottom:.5em;
   font-weight: 500;
   line-height: 1.2;
 }
 
 .home__subtitulo{
-  font-size: 1.5rem;
-  margin-bottom:.5rem;
-  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom:.5em;
+  font-weight: 500;
   line-height: 1.7;
   color:#1a1a1a;
 }
+
+.home__subtitulo::after {
+  content: '|';
+  margin-left: 5px;
+  animation: pisca 0.9s infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
 
 .home__link{
   text-decoration: none;
@@ -37,5 +53,13 @@ font-family: "Arbutus Slab", serif;
   background-color:var(--primary);
   display: inline-block;
   border-radius: 30px;
-  padding: 1rem 1.6rem;
+  padding: 1em 1.5em;
+  font-size: 1.1em;
+}
+
+@media (max-width:990px){
+  .home{
+    background-image: url('../projectsImages/opacity.png');
+    background-color:#ffffffb8;
+  }
 }

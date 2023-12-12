@@ -1,0 +1,50 @@
+form{
+  width: 90%;
+  margin: 5em auto;
+}
+
+input::placeholder{
+  font-weight: 300;
+  font-family: inherit inherit;
+  font-size: 1.2rem;
+  
+}
+
+input:not(:last-child), textarea{
+  display: inline-block;
+  width:100%;
+  border:none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: .5em;
+  font-size: 1.2em;
+  font-family: inherit inherit;
+  margin-bottom: 1.2em;
+  color: #495057;
+
+}
+
+
+input[type="submit"]{
+  font-size: 1.2em;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-family: inherit;
+  font-weight: 500;
+}
+input[type="submit"]:hover{cursor: pointer;}
+.ativo:focus{
+  transition-delay: .08s;
+  outline: none;
+  border-color: #000;
+}
+
+#textarea{
+width: 100%;
+min-width: 100%;
+max-width: 100%;
+font-size: 1.2em;
+font-family: inherit;
+margin-top: 1rem;
+}
+

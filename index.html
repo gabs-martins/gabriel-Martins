@@ -4,80 +4,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Borel&family=Josefin+Sans:wght@500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Gabriel Martins</title>
 </head>
-<body>
-  
-  <div class="pic__container">
-    <header class="header">
-      <div class="header__container">
-        <div class="header__left">
-          <nav>
-            <ul class="header__lista">
-              <li><a href="#" class="header__link">Home</a></li>
-              <li><a href="#" class="header__link">Cursos</a></li>
-            </ul>
-          </nav>
-        </div>
-      
-        <div class="header__center">
-          <a href="#" class="logo">Gabs</a>
-        </div>
-    
-        <div class="header__right">
-          <nav>
-            <ul class="header__lista">
-              <li><a href="#" class="header__link">Projetos</a></li>
-              <li><a href="#" class="header__link">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-
+<body class="corpo">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__left">
+        <nav>
+          <ul class="header__lista">
+            <li><a href="#" class="header__link scroll-link" data-scroll=".corpo">Home</a></li>
+            <li><a href="#" class="header__link scroll-link" data-scroll=".cursos__titulo">Habilidades</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
+      
+      <div class="header__center">
+        <a href="#" class="logo scroll-link" data-scroll=".sobre">Gabs</a>
+        <button class="x" id="menu-burger">&#9776</button>
+      </div>
+      
+      
+      <div class="header__right">
+        <nav>
+          <ul class="header__lista">
+            <li><a href="#" class="header__link scroll-link" data-scroll=".projetos">Projetos</a></li>
+            <li><a href="#" class="header__link scroll-link" data-scroll=".contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+<!-- mobile menu -->
+    <div class="header___mobile">
+      <button  class="fa-solid fa-x x" id="fechar"></button>
+      <nav class="header__nav___mobile">
+        <ul>
+          <li><a href="#" class="header__link scroll-link header__link___mobile" data-scroll=".corpo">Home</a></li>
+          <li><a href="#" class="header__link scroll-link header__link___mobile" data-scroll=".sobre" >Sobre</a></li>
+          <li><a href="#" class="header__link scroll-link header__link___mobile" data-scroll=".cursos__titulo">Habilidades</a></li>
+          <li><a href="#" class="header__link scroll-link header__link___mobile" data-scroll=".projetos">Projetos</a></li>
+          <li><a href="#" class="header__link scroll-link header__link___mobile" data-scroll=".contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
   <main>
     <section class="home">
       <div class="home__container">
         <h1 class="home__titulo">Olá! sou Gabriel Martins</h1>
         <h2 class="home__subtitulo">Desenvolvedor Front-end</h2>
-        <a href="#" class="home__link">Ver Projetos</a>
+        <a href="#" class="home__link scroll-link hover" data-scroll=".projetos">Ver Projetos</a>
+      </div>
+      </section>    
+
+    <section class="cursos section">
+      <div class="cursos__container">
+        <h2 class="cursos__titulo">Habilidades</h2>
+  
+        <div class="cursos__grid">
+          <div class="cursos__card">
+            <span class="fa-brands fa-square-js cursos__icon"></span>
+            <h3 class="cursos__card___titulo">JavaScript</h3>
+            <p class="cursos__card___p">JavaScript é uma linguagem de programação web, impulsiona interatividade e dinamismo em páginas. Essencial para desenvolvimento front-end, permite criar experiências envolventes e responsivas, elevando a usabilidade online.</p>
+          </div>
+          <div class="cursos__card">
+            <span class="fa-brands fa-github cursos__icon"></span>
+            <h3 class="cursos__card___titulo">Git/Github</h3>
+            <p class="cursos__card___p">Git, sistema de controle de versão, otimiza colaboração em projetos. Permite rastrear alterações, ramificar e mesclar código eficientemente, garantindo histórico claro e colaboração fluida.</p>
+          </div>
+          <div class="cursos__card">
+            <span class="fa-brands fa-html5 cursos__icon"></span>
+            <h3 class="cursos__card___titulo">HTML</h3>
+            <p class="cursos__card___p">HTML (Hypertext Markup Language) é a espinha dorsal da web. Utilizado para estruturar conteúdo online, define elementos como títulos, parágrafos e links. Sua sintaxe simples e tags permitem criar páginas acessíveis, facilitando a navegação e interpretação por navegadores.</p>
+          </div>
+          <div class="cursos__card">
+            <span class="fa-brands fa-css3-alt cursos__icon icon"></span>
+            <h3 class="cursos__card___titulo">CSS flex/Grid layout</h3>
+            <p class="cursos__card___p">CSS (Cascading Style Sheets) complementa o HTML, estilizando elementos para criar layouts atraentes. Define cores, fontes e espaçamento, proporcionando design consistente. Seu poder reside na cascata, permitindo controle hierárquico e modularização para construir interfaces visualmente cativantes.</p>
+          </div>
+        </div>
+      </div>  
+    </section> 
+    
+    <section class="sobre">
+      <div class="sobre__container">
+        <img src="./projectsImages/me.jpg" alt="" class="foto--movel" >
+        <div class="sobre__content">
+          <h2 class="sobre__titulo">Sobre Mim</h2>
+          <p>
+            Me chamo Gabriel e sou natural de Manaus. Amo comer, e a culinária da minha região é a minha favorita.
+            Sou apaixonado por basquete e pratico frequentemente; adoro a adrenalina de competir e, claro, vencer.
+            Gosto de entregar 100% de mim em qualquer coisa que tenha meu interesse, pois acredito que, 
+            mesmo que não obtenha sucesso imediatamente, é apenas uma questão de tempo para conquistá-lo.
+            Além disso, sou um amante da música e escuto quase todos os gêneros, sendo os meus preferidos Rap e Pop.
+          </p>
+          <a href="#" class="home__link scroll-link hover" data-scroll=".contato">Contate-me</a> 
+        </div>
+        <img src="projectsImages/me.jpg" alt="" class="foto--desktop">
       </div>
     </section>
-  </div>  
+    <section class="projetos section">
+      <h2 class="projetos__titulo">Projetos</h2>
   
-  <section class="cursos section">
-    <div class="cursos__container">
-      <h2 class="cursos__titulo">Cursos</h2>
-
-      <div class="cursos__grid">
-        <div class="cursos__card">
-          <span class="fa-brands fa-square-js cursos__icon"></span>
-          <h3 class="cursos__card___titulo">JavaScript</h3>
-          <p class="cursos__card___p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam in, natus blanditiis maiores officiis atque eveniet, quae sit quas dolor consequuntur animi quos quod. Obcaecati facere vero quasi est ex?</p>
+      <div class="projetos__grid">
+      <article class="projetos__card">
+        <h3 class="projetos__card__titulo">To do List</h3>
+        <div class="projetos__card__imagem">
+          <a href="#" target="_blank">
+            <img src="projectsImages/todo.png" class="projetos__img" alt="Lista de Tarefas">
+          </a>
         </div>
-        <div class="cursos__card">
-          <span class="fa-brands fa-github cursos__icon"></span>
-          <h3 class="cursos__card___titulo">Git/Github</h3>
-          <p class="cursos__card___p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente dolorem tenetur, mollitia perspiciatis natus iste, temporibus vel, nihil quod dignissimos sunt? Possimus, itaque voluptas. Corrupti iure perferendis quaerat voluptates commodi.</p>
+      </article>
+      <article class="projetos__card">
+        <h3 class="projetos__card__titulo">To do List</h3>
+        <div class="projetos__card__imagem">
+          <a href="#" target="_blank" >
+            <img src="projectsImages/todo.png" class="projetos__img" alt="Lista de Tarefas">
+          </a>
         </div>
-        <div class="cursos__card">
-          <span class="fa-sharp fa-solid fa-terminal cursos__icon"></span>
-          <h3 class="cursos__card___titulo">CMD</h3>
-          <p class="cursos__card___p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste excepturi ex nam totam ad quaerat laudantium laboriosam, neque deserunt consequatur quae tempora illum ipsa unde sunt harum dolorum officiis modi.</p>
+      </article>
+      <article class="projetos__card">
+        <h3 class="projetos__card__titulo">To do List</h3>
+        <div class="projetos__card__imagem">
+          <a href="#" target="_blank" class="aquisobre">
+            <img src="projectsImages/todo.png" class="projetos__img" alt="Lista de Tarefas">
+          </a>
         </div>
-        <div class="cursos__card">
-          <span class="fa-brands fa-css3-alt cursos__icon icon"></span>
-          <h3 class="cursos__card___titulo">CSS flex/Grid layout</h3>
-          <p class="cursos__card___p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cumque architecto doloremque fugiat neque repudiandae vel culpa qui excepturi esse accusamus sunt voluptates unde quasi praesentium, laborum consequatur veniam ducimus.</p>
-        </div>
+      </article>
       </div>
-  </section> 
-  </main>
+      
+    </section>
+  
+    <section class="contato">
+      <h2 class="projetos__titulo">Contato</h2>
+      <form action="https://formsubmit.co/efd1e9e297cdbbdf146d64b3812c73b5" method="POST">
+        <input type="text" placeholder="Nome" name="name" class="ativo" required>
+        <input type="email" placeholder="Email" name="email" class="ativo" required>
+        <input type="text" placeholder="Assunto" class="ativo" name="assunto" required>
+        <textarea name="" id="textarea" cols="100" rows="3" class="ativo" placeholder="Digite sua mensagem aqui." class="ativo" required></textarea>
+        <input type="submit" value="Enviar" class="home__link hover">
+      </form>
+    </section>
+    </main>
+    <footer class="footer">
+      <h2>Copyright ©2023 All rights reserved | Feito com 💚 pelo Biel</h2>
+      <nav>
+        <a href="https://www.linkedin.com/in/gabriel-martins-a491a0255/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin cursos__icon hover" id="in"></i></a>
+        <a href="https://github.com/gabs-martins" target="_blank" title="GitHub"><i class="fa-brands fa-github cursos__icon hover"></i></a>
+      </nav>
+    </footer>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="https://kit.fontawesome.com/b0152cf824.js" crossorigin="anonymous"></script>
 
-  <script src="https://kit.fontawesome.com/b0152cf824.js" crossorigin="anonymous"></script>
 </body>
 </html>

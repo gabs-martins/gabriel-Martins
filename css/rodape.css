@@ -1,0 +1,19 @@
+footer{
+  background-color: var(--light);
+  text-align: center;
+  padding: 4em 0;
+  font-size: 1.2em;
+}
+
+footer>nav{
+  margin-top: 1em;
+}
+
+.hover:hover{
+  background-color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+#in:hover{
+  background-color: #0e76a8 ;
+}

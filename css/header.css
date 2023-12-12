@@ -2,14 +2,13 @@
   width: 100%;
   background-color: transparent;
   position: fixed;
-  top: 0;
-  left: 0;
   transition: background-color 0.3s ease-in;
-   
+  z-index: 2;
 }
 
 .header:hover{
   background-color:#fff;
+  z-index: 1000;
 }
 
 .header__container{
@@ -17,7 +16,11 @@
   align-items: center;
   justify-content: center;
   padding:  1.5rem 0;
+  transition: padding 0.3s ease-in-out;
 }
+
+.header___padding-transition {transition: padding 0.3s ease-out;}
+.header___fixed{background-color: #fff;}
 
 .header__lista{
   display: flex;
@@ -33,7 +36,7 @@ line-height: 1.5;
 .header__link{
   padding: 5px 20px;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color:#000;
   transition: color .1s ease-in;
   font-family: "Arbutus Slab";
@@ -44,12 +47,86 @@ line-height: 1.5;
 }
 
 .header__center{
-  margin: 0 3.5rem;
+  margin: 0 3.5em ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo{
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2em;
   color: var(--primary);
   font-weight: 500;
+}
+
+
+#menu-burger,.header___mobile{display: none;}
+
+
+
+
+/* responsive */
+
+@media(max-width: 990px){
+  .header__right, .header__left{display: none;}
+  #menu-burger{
+    all: unset;
+    font-weight: 700;
+    cursor:pointer;
+  }
+
+  .header___mobile{
+    display: flex;
+    height: 100%;
+    width: 300px;
+    background-color:#fff;
+    border-left:5px solid var(--primary);
+    position: fixed;
+    right:-300px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+  }
+
+  .menu__active{
+    transform:translateX(-300px)
+
+  }
+
+  .header__nav___mobile{
+    height:300px;
+    margin-top: 5em;
+
+  }
+  .header__nav___mobile ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header__nav___mobile li{
+    list-style: none;
+  }
+  .header__link___mobile{
+    width: 100%;
+  }
+  .header__link___mobile:active{color: var(--primary);}
+  
+  .header__center{margin: 0;}
+  
+  .logo{
+    font-size: 1.7em; 
+    margin-right: 0.5em;
+  }
+
+  .x{
+    all: unset;
+    position: absolute;
+    right:33px;
+    top: 22px;
+  }
+  
 }
