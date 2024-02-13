@@ -22,19 +22,18 @@ h2{
   font-weight: 400;
 }
 
-@media (max-width:480px){
-  h2{
-    margin: 1em auto;
-  }
-  .section{
-    margin: 1em 0;
-  }
-  
-}
-
 @media (max-width:557px){
-  .home__container{
-    margin-left: 1em;
+  .sobre, .cursos,.home,.contato, .projetos{
+    margin:0;
   }
-  
+  .cursos__titulo, .projetos__titulo{
+    margin: 1.5em 0;
+  }
+  .sobre{
+    padding: 0;
+  }
+   
+  .projetos__grid{
+    row-gap: 1.5rem;
+  }
 }
