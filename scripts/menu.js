@@ -14,17 +14,3 @@ btns.forEach(b => {
   });
 });
 
-// btn.addEventListener('click',()=>{
-//   header.style.display = 'none'
-//   menuMobile.classList.add=''
-//   menuMobile.style.display = 'flex'
-// })
-
-// fechar.addEventListener('click',()=>{
-//   menuMobile.classList.remove=''
-//   header.style.display = 'flex'
-//   menuMobile.style.display = 'none'
-// }
-//   )
-
-
